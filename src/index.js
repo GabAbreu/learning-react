@@ -1,44 +1,47 @@
-/*function MainContent(){
-    return(
-        <h1>I'm learning React!</h1>
+function Header(){
+    return (
+        <header className="header">
+            <nav className="nav-container">
+                <img className="nav-logo" src="..\img\react-logo.png" />
+                <ul className="nav-items">
+                    <li><a className="nav-link" href="https://google.com.br">Pricing</a></li>
+                    <li><a className="nav-link" href="https://google.com.br">About</a></li>
+                    <li><a className="nav-link" href="https://google.com.br">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
     )
 }
 
-function Navbar(){
+function MainContent(){
     return(
-        <p>Hi</p>
+        <div className="main-content">
+            <h1>Reasons I'm excited to learn React</h1>
+            <ol>
+                <li>Faster development</li>
+                <li>Learning new tech</li>
+                <li>Easier development</li>
+            </ol>
+        </div>
     )
 }
 
-ReactDOM.render(
-    <div>
-        <Navbar/>
-        <MainContent/>
-    </div>
-    ,document.getElementById("root")
-)
-*/
+function Footer(){
+    return(
+        <div className="footer">
+            <small>© 2022 GabAbreu development. All rights reserved.</small>
+        </div>
+    )
+}
 
+function Page(){
+    return(
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
+    )
+}
 
-/* Creating a h1 appending to root vanilla javascript
-const h1 = document.createElement("h1")
-h1.textContent = "This is an imperative way to program"
-h1.className = "Header"
-document.getElementById("root").append(h1)
-*/
-
-const navbar = (
-    <nav>
-        <h1>KoxyD</h1>
-        <ul>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-)
-
-ReactDOM.render(
-    navbar,
-    document.getElementById("root")
-)
+ReactDOM.render(<Page />, document.getElementById("root"))
