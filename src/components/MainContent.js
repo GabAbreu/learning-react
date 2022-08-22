@@ -9,6 +9,7 @@ export default function MainContent(){
                 <li>Easy to learn</li>
                 <li>Updated for Skilled people</li>
             </ol>
+            <input className="form-check-input" type="checkbox"></input>
         </div>
     )
 }
