@@ -1,70 +1,105 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
+*{
     margin: 0;
-    font-family: Inter, sand-serif;
-    background-color: #282D35;
+    padding: 0;
 }
 
-nav {
+html{
+    background-color: rgb(31, 33, 37);
+}
+
+.app--main{
+    border-radius: 15px;
+    margin: 20%;
+    background-color: rgb(24, 26, 30)
+}
+
+footer{
     display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(16, 16, 18);
+}
+
+footer > button{
+    background-color: rgb(102, 99, 106);
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: #21222A;
-    height: 90px;
-    padding: 30px 25px;
+    cursor: pointer;
 }
 
-
-.nav--logo_text, .nav--title{
-    margin: 0;
+footer > button > img {
+    width: 20px;
 }
 
-.nav--logo_text {
-    margin-right: auto;
-    color: #61DAFB;
-    font-weight: 700;
-    font-size: 22px;
+.interests{
+    margin: 50px;
 }
 
-.nav--title {
-    color: #DEEBF8;
-    font-weight: 600;
-}
-
-.nav--icon{
-    height: 30px;
-    margin-right: 7px;
-}
-
-main{
-    padding: 57px 27px;
+.interests h2{
     color: white;
-    background-image: url("./img/react-logo.png");
-    background-position: right 75%;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    filter: grayscale(100%);
 }
 
-.main--title{
-    margin: 0;
-    font-size: 39px;
-    letter-spacing: -0.05em;
+.interests p{
+    margin-top: 5px;
+    color: gray;
 }
 
-.main--facts {
-    margin-top: 46px;
-    max-width: 400px;
+.about{
+    margin: 50px;
 }
 
-.main--facts > li{
-    line-height: 19px;
-    padding-block: 10px;
+.about h2{
+    color: white;
 }
 
-.main--facts > li::marker{
-    font-size: 1.4rem;
-    color: #61DAFB;
+.about p{
+    margin-top: 5px;
+    color: gray;
+}
+
+.info--picture{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
+.info--label{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info--name{
+    font-size: 40px;
+    color: white;
+}
+
+.info--occupation{
+    
+    font-size: 20px;
+    color: rgb(134, 125, 125)   
+}
+
+.info--site{
+    margin-top: 10px;
+    color: gray;
+    font-size: 15px;
+}
+
+.info--buttons{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.info--buttons button{
+    padding: 8px 14px;
 }
