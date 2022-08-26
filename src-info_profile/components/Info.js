@@ -1,7 +1,22 @@
 import React from "react";
 
-import Picture from "../images/picture.png";
 import Email from "../images/email-logo.png";
+//import Picture from "../images/picture.png";
+var Picture = "";
+    fetch("https://api.github.com/users/GabAbreu")
+        .then(response => {
+            if(!response.ok){
+                throw "erro";
+            }
+            return(response.json());
+        })
+        .then(result => {
+            Picture = result?.avatar_url ?? "../images/picture.png";
+        }).catch(err =>{
+            console.log(err)
+        });
+
+
 
 export default function(){
     return(
