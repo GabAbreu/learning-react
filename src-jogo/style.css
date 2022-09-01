@@ -1,0 +1,89 @@
+*{
+    font-family: Ubuntu;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../src/images/background.jpg");
+    background-repeat: no-repeat;
+}
+
+.nav--social_media > a > img{
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    width: 30px;
+    margin: 5px;
+    transition: background-color 0.5s
+}
+
+.nav--logo{
+    width: 500px;
+}
+
+.nav--social_media > a > img:hover{
+    background-color: pink;
+    transition: background-color 0.5s
+}
+
+header{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav--login{
+    margin-top: -20px;
+    margin-right: -20px;
+    width: 450px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.nav--login:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container {
+    text-align: center;
+    margin: 0px 25% 0px 25%;
+    background-color: rgba(50, 100, 100, 0.8);
+}
+
+.como-jogar{
+    margin-top: 200px;
+}
+
+.char--body{
+    width: 400px;
+    position: absolute;
+}
+.char--hair{
+    width: 400px;
+    position: absolute;
+}
+.char--head{
+    width: 400px;
+    position: absolute;
+}
+.char--shirt{
+    width: 400px;
+    position: absolute;
+}
+.char--pants{
+    width: 400px;
+    position: absolute;
+}
+.char--shoes{
+    width: 400px;
+    position: absolute;
+}
+
+
+.char--main{
+    background-color: white;
+    width: 450px;
+    height: 1000px;
+}
