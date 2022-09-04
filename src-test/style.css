@@ -1,0 +1,30 @@
+*{
+    width: 500px;
+    position: absolute;
+}
+
+
+.main{
+    display: flex;
+}
+
+.main--pedido_comida2 {
+    margin-left: 130px;
+}
+
+.main--pedido2 {
+    margin-left: 130px;
+}
+
+.main--pedido_comida3, .main--pedido3 {
+    margin-left: 260px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.main--pedido_comida3:hover, .main--pedido3:hover {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}

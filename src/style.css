@@ -20,14 +20,20 @@ nav {
 
 .card{
     padding: 20px;
-    width: 280px;
+    font-size: 12px;
+    width: 175px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .card--photo{
     width: 100%;
-    height: 300px;
+    border-radius: 9px;
+    margin-bottom: 9px;
     object-fit: cover;
-    border-radius: 10px;
+    height: 200px;
 }
 
 .card--rate *{
@@ -49,14 +55,20 @@ nav {
 }
 
 .card--title{
-    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
+.container {
+    display: flex;
+}
 
-
-
-.joke{
-    background-color: gray;
-    padding: 10px;
-    margin: 10px;
+.card--badge {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 4px;
+    font-weight: bold;
 }
