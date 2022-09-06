@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Popping', sans-serif;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    padding: 20px 36px;
+    box-shadow: 0px 2.98256px 7.4564px rgb(0, 0, 0, 0.1)
+}
+
+.nav--logo{
+    max-width: 100px;
+}
+
+.card{
+    padding: 20px;
+    font-size: 12px;
+    width: 175px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card--photo{
+    width: 100%;
+    border-radius: 9px;
+    margin-bottom: 9px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.card--rate *{
+    margin: 0;
+}
+
+.card--rate{
+    display: flex;
+    align-items: center;
+}
+
+.card--star{
+    width: 30px;
+}
+
+.card--review_count, .card--location{
+    margin-left: 5px;
+    color: gray;
+}
+
+.card--title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container {
+    display: flex;
+}
+
+.card--badge {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 4px;
+    font-weight: bold;
+}

@@ -1,14 +1,14 @@
 import React from "react"
 
+import Card from "./components/Card"
+import Data from "./components/Data"
+import Navbar from "./components/Navbar"
+
 import "./style.css"
 
-import Navbar from "./components/Navbar"
-import Card from "./components/Card"
-import Data from "./data"
-
 export default function App(){
-    const card = Data.map( item =>{
-        return (
+    const cards = Data.map( item => {
+        return(
             <Card 
                 key = {item.id}
                 {...item}
@@ -17,11 +17,9 @@ export default function App(){
     })
     return(
         <>
-            
             <Navbar />
-            <div className="container">
-                {card}
-            </div>
+            {cards}
+            
         </>
     )
 }
