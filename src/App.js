@@ -1,25 +1,17 @@
 import React from "react"
 
-import Card from "./components/Card"
-import Data from "./components/Data"
 import Navbar from "./components/Navbar"
+import Main from "./components/Main"
+import Footer from "./components/Footer"
 
 import "./style.css"
 
 export default function App(){
-    const cards = Data.map( item => {
-        return(
-            <Card 
-                key = {item.id}
-                {...item}
-            />
-        )
-    })
     return(
         <>
             <Navbar />
-            {cards}
-            
+            <Main />
+            <Footer />
         </>
     )
 }

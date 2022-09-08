@@ -3,64 +3,78 @@
     padding: 0;
 }
 
-body {
-    background-color: black;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-header {
-    color: white;
+header{
     display: flex;
-    align-content: center;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    background: rgb(138,43,226);
+    background: linear-gradient(90deg, rgba(138,43,226,1) 30%, rgba(167,92,237,1) 60%);
+    color: white;
+    font-family: 'Arial Narrow', Arial, sans-serif
 }
 
-.card {
-    margin: 10px 5%;
-    height: 400px;
-    position: relative;
-    mask-image: linear-gradient(180deg, rgba(255,0,0,0) 0%, rgba(255,0, 0,1) 5%);
+.logo{
+    display: flex;
 }
 
-.card img {
-    height: 400px;
-    width: 800px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    object-fit: cover;
+.logo--image {
+    width: 60px;
+    transform: scaleX(-1);
+    margin-right: 20px;
 }
 
-.back-red {
-    background-color: red;
+.main {
+    margin: 40px 35px;
 }
 
-.back-cream {
-    background-color: #c2b280;
+.main--input{
+    display: flex;
+    justify-content: space-between;
 }
 
-.back-white {
-    background-color: white;
+.main--input input{
+    width: 45%;
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 15px;
+    border: 1px solid rgb(165, 165, 165);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
 }
 
-.mask1 {
-    mask-image: linear-gradient(90deg, rgba(255,0,0,0) 0%, rgba(255,0, 0,1) 75%);
-    transform: 2s;
-  }
-
-.mask1:hover{
-    mask-image: linear-gradient(90deg, rgba(255,0,0,0) 0%, rgba(255,0, 0,1) 25%);
-    transform: 2s;
+.main--input input:focus {
+    border: 1px solid purple;
+    outline: none;
 }
 
-.card--description {
-    width: 50%;
-    margin: 30px 20px;
-    font-size: 30px;
+.main--btn_generate {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 7px;
+    border: 0;
+    background: rgb(138,43,226);
+    background: linear-gradient(90deg, rgba(138,43,226,1) 30%, rgba(167,92,237,1) 60%);
+    cursor: pointer;
+    color: white;
 }
 
-.card--title {
-    font-size: 35px;
-    margin-left: 20px;
-    padding-top: 20px;
+.main--btn_generate:hover {
+    background: linear-gradient(90deg, rgb(119, 32, 201) 30%, rgb(161, 77, 240) 60%);
+}
+
+.main--btn_icon {
+    width: 25px;
+    margin-left: 5px;
+}
+
+.main--meme_img {
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    object-fit: contain;
 }
