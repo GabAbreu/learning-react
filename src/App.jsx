@@ -3,8 +3,10 @@ import Footer from "./components/Footer"
 import MainContent from "./components/MainContent"
 import State from "./components/State"
 import Counter from "./components/Counter"
+import Ternary from "./components/Ternary"
 
 import "./index.css"
+
 
 export default function App(){
     return(
@@ -13,7 +15,8 @@ export default function App(){
             <MainContent />
             <Footer />
             {/* <State /> */}
-            <Counter />
+            {/* <Counter /> */}
+            <Ternary />
         </>
     )
 }
